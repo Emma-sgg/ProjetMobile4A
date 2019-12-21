@@ -1,6 +1,7 @@
 <resources>
   <string name="app_name">ProjetMobile4A</string>
   <string name="name_button">Drink beer like it is your day job</string>
-    <string name="todo">TODO</string>
+    <string name="todo_1">TODO</string>
+  <string name="todo_2">TODO</string>
 
 </resources>

@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="18dp"
-        android:contentDescription="@string/todo"
+        android:contentDescription="@string/todo_1"
         android:src="@drawable/beer_logo"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintStart_toStartOf="parent" />

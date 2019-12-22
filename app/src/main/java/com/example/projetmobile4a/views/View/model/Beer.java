@@ -1,4 +1,4 @@
-package com.example.projetmobile4a.views.View;
+package com.example.projetmobile4a.views.View.model;
 
 public class Beer {
     private String image_url;

@@ -1,9 +1,10 @@
-package com.example.projetmobile4a.views.View;
+package com.example.projetmobile4a.views.View.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-
+import android.widget.TextView;
 import com.example.projetmobile4a.R;
 
 public class Activity2 extends AppCompatActivity {

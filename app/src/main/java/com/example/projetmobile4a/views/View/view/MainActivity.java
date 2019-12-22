@@ -1,4 +1,4 @@
-package com.example.projetmobile4a.views.View;
+package com.example.projetmobile4a.views.View.view;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.projetmobile4a.R;
+import com.example.projetmobile4a.views.View.view.Activity2;
 
 public class  MainActivity extends AppCompatActivity {
 

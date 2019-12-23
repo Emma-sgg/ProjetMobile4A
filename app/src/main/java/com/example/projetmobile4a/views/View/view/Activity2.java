@@ -76,8 +76,7 @@ public class Activity2 extends AppCompatActivity {
     // private void
     public void onItemClick(Beer beer){
         Intent imgIntent = new Intent(this, DetailActivity.class);
-
-
+        imgIntent.putExtra("BEER_DESCRIPTION", beer.getDescription());
         startActivity(imgIntent);
     }
 
@@ -86,18 +85,27 @@ public class Activity2 extends AppCompatActivity {
 
         View linearLayout =  findViewById(R.id.item);
 
-
         TextView demo = null;
-        ImageView image =null;
+        ImageView image = null;
+        TextView desc = null;
 
-        for (Beer b : beerList) {
+        for (final Beer b : beerList) {
             demo = new TextView(this);
             demo.setText(b.getName());
+            desc = new TextView(this);
+            desc.setText(b.getDescription());
             image = new ImageView(this);
             //image.setImageURI(Uri.parse(b.getImage_url()));
             Picasso.with(this).load(b.getImage_url()).into(image);
             ((LinearLayout) linearLayout).addView(demo);
             ((LinearLayout) linearLayout).addView(image);
+            image.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View v){
+                    onItemClick(b);
+                }
+
+
+            });
         }
         /*recyclerView.setHasFixedSize(true);
         // use a linear layout manager
@@ -107,7 +115,7 @@ public class Activity2 extends AppCompatActivity {
             input.add("Test" + i);
         }// define an adapter*/
 
-        /*mAdapter = new MyAdapter(beerList);
+       /* mAdapter = new MyAdapter(beerList);
         recyclerView.setAdapter(mAdapter);*/
 
     }

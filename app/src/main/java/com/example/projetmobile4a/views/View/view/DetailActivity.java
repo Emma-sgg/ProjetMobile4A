@@ -14,15 +14,19 @@ public class DetailActivity extends AppCompatActivity {
 
   private ImageView imgBeer;
   private TextView titrel;
+  private TextView descl;
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.detail_activity);
 
     //imgBeer = findViewById(R.id.img_beer);
-    titrel = findViewById(R.id.titre);
+    /*titrel = findViewById(R.id.titre);
 
-    titrel.setText(getIntent().getStringExtra("EXTRA_SESSION_ID"));
+    titrel.setText(getIntent().getStringExtra("EXTRA_SESSION_ID"));*/
+
+    descl = findViewById(R.id.desc);
+    descl.setText(getIntent().getStringExtra("BEER_DESCRIPTION"));
 
     /*String chienJson = getIntent().getStringExtra("CLE");
     Gson gson = new Gson();

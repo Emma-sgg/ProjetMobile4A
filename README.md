@@ -18,7 +18,7 @@ Architecture MVC
 
 <p><h2>Voici des images du projet :</h2>
 
-<img width="248" alt="Main" src="/Users/Mama/Desktop/Capture d’écran 2019-12-23 à 22.29.13.png">
+<img width="248" alt="Main" src="//Users/Mama/AndroidStudioProjects/ProjetMobile4A/Capture d’écran 2019-12-23 à 22.29.13.png">
 
 
 

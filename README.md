@@ -27,17 +27,17 @@ git clone : https://github.com/Emma-sgg/ProjetMobile4A
 
 Controller
 <ul>
-    <li> BeerItemClickListener</li>
-    <li> controller.java</li>
-    <li> JsonPlaceHolderApi</li>
+    - BeerItemClickListener
+    controller.java
+    JsonPlaceHolderApi
 
 Model
 <ul>
-    <li> Beer</li>
+    Beer
 
 View
 <ul>
-    <li> Activity 2</li>
-    <li> DetailActivity</li>
-    <li> Main Activity</li>
-    <li> MyAdapter</li>
+    Activity 2
+    DetailActivity
+    Main Activity
+    MyAdapter

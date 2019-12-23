@@ -23,21 +23,21 @@ Architecture MVC
 
 git clone : https://github.com/Emma-sgg/ProjetMobile4A
 
-<p><h2>Architecture MVC<p><h2>
+<p><h2>Architecture MVC</p><h2>
 
 Controller
 <ul>
-    - BeerItemClickListener
-    controller.java
-    JsonPlaceHolderApi
+    <p>BeerItemClickListener</p>
+    <p>controller.java</p>
+    <p>JsonPlaceHolderApi</p>
 
 Model
 <ul>
-    Beer
+    <p>Beer</p>
 
 View
 <ul>
-    Activity 2
-    DetailActivity
-    Main Activity
-    MyAdapter
+    <p>Activity 2</p>
+    <p>DetailActivity</p>
+    <p>Main Activity</p>
+    <p>MyAdapter</p>

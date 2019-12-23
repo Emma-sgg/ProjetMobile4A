@@ -16,26 +16,26 @@ Utilisation de Git
 Design
 Architecture MVC
 
-Voici des images du projet :
+<p><h2>Voici des images du projet :</h2>
 
 
-Installation du projet :
+<p><h2>Installation du projet :</h2>
 
 git clone : https://github.com/Emma-sgg/ProjetMobile4A
 
-Architecture MVC
+<p><h2>Architecture MVC<p><h2>
 
-<li>Controller</li>
+Controller
 <ul>
     <li> BeerItemClickListener</li>
     <li> controller.java</li>
     <li> JsonPlaceHolderApi</li>
 
-<li>Model</li>
+Model
 <ul>
     <li> Beer</li>
 
-<li> View</li>
+View
 <ul>
     <li> Activity 2</li>
     <li> DetailActivity</li>

@@ -18,7 +18,11 @@ Architecture MVC
 
 <p><h2>Voici des images du projet :</h2>
 
-<img width="248" alt="Main" src="//Users/Mama/AndroidStudioProjects/ProjetMobile4A/Capture d’écran 2019-12-23 à 22.29.13.png">
+<img width="233" alt="Capture d’écran 2019-12-23 à 23 28 55" src="https://user-images.githubusercontent.com/30866295/71383302-0418fa00-25dc-11ea-8033-ffccd07965bb.png">
+
+<img width="234" alt="Capture d’écran 2019-12-23 à 22 29 39" src="https://user-images.githubusercontent.com/30866295/71383321-185cf700-25dc-11ea-8f43-dea4580ecbc3.png">
+
+<img width="235" alt="Capture d’écran 2019-12-23 à 22 30 05" src="https://user-images.githubusercontent.com/30866295/71383338-27dc4000-25dc-11ea-9a34-6f90349d6370.png">
 
 
 

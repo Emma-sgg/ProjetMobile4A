@@ -1,15 +1,16 @@
 package com.example.projetmobile4a.views.View.view;
 
-
-import java.text.BreakIterator;
 import java.util.List;
+
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import com.example.projetmobile4a.R;
 import com.example.projetmobile4a.views.View.model.Beer;
@@ -23,7 +24,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     public TextView txtHeader;
     public TextView txtFooter;
+    public ImageView txtImage;
     public View layout;
+
 
 
 
@@ -32,9 +35,24 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
       layout = v;
       txtHeader = (TextView) v.findViewById(R.id.firstLine);
       txtFooter = (TextView) v.findViewById(R.id.secondLine);
+      //txtImage = v.findViewById(R.id.icon);
+    itemView.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+          Context context = v.getContext();
+          Intent intent  = new Intent(context, DetailActivity.class);
+          intent.putExtra("EXTRA_SESSION_ID", txtFooter.getText());
+          context.startActivity(intent);
+
+        }
+
+
+      });
 
     }
   }
+
 
   public void add(int position, Beer item) {
     values.add(position, item);
@@ -71,10 +89,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     // - get element from your dataset at this position
     // - replace the contents of the view with that element
     //Beer obj_beer = values.get
+
     final Beer currentBeer = values.get(position);
-    //String image_url = currentBeer.getImage_url();
     holder.txtHeader.setText(currentBeer.getName());
-    // holder.txtFooter.setText(currentBeer.getName());
     holder.txtFooter.setText(currentBeer.getName());
    holder.txtFooter.setOnClickListener(new OnClickListener() {
 

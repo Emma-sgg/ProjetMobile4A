@@ -1,14 +1,23 @@
 package com.example.projetmobile4a.views.View.view;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Layout;
+import android.view.View;
+import android.widget.GridLayout;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.example.projetmobile4a.R;
 import com.example.projetmobile4a.views.View.controler.BeerItemClickListener;
 import com.example.projetmobile4a.views.View.controler.JsonPlaceHolderApi;
 import com.example.projetmobile4a.views.View.model.Beer;
+import com.google.gson.Gson;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -30,7 +39,9 @@ public class Activity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity2);
         recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
-        textViewResult = findViewById(R.id.my_text_view);
+        //textViewResult = findViewById(R.id.my_text_view);
+
+
 
         Retrofit retrofit = new Retrofit.Builder() //création du retrofit
                 .baseUrl("https://api.punkapi.com/v2/")
@@ -63,10 +74,32 @@ public class Activity2 extends AppCompatActivity {
     }
 
     // private void
+    public void onItemClick(Beer beer){
+        Intent imgIntent = new Intent(this, DetailActivity.class);
+
+
+        startActivity(imgIntent);
+    }
 
 
     public void showList(List<Beer> beerList){
-        recyclerView.setHasFixedSize(true);
+
+        View linearLayout =  findViewById(R.id.item);
+
+
+        TextView demo = null;
+        ImageView image =null;
+
+        for (Beer b : beerList) {
+            demo = new TextView(this);
+            demo.setText(b.getName());
+            image = new ImageView(this);
+            //image.setImageURI(Uri.parse(b.getImage_url()));
+            Picasso.with(this).load(b.getImage_url()).into(image);
+            ((LinearLayout) linearLayout).addView(demo);
+            ((LinearLayout) linearLayout).addView(image);
+        }
+        /*recyclerView.setHasFixedSize(true);
         // use a linear layout manager
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
@@ -74,8 +107,8 @@ public class Activity2 extends AppCompatActivity {
             input.add("Test" + i);
         }// define an adapter*/
 
-        mAdapter = new MyAdapter(beerList);
-        recyclerView.setAdapter(mAdapter);
+        /*mAdapter = new MyAdapter(beerList);
+        recyclerView.setAdapter(mAdapter);*/
 
     }
 
